@@ -4,10 +4,10 @@ namespace ConsoleCalculator
 {
     public class Calculator
     {
-
+        private CalculatorOperations operation = new CalculatorOperations();
         public string SendKeyPress(char key)
         {
-            // Add your implementation here.
+            return operation.PerformOperation(key);
             throw new NotImplementedException();
         }
     }
